@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .logo .logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navbar .logo .name-text {
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
+}
+
+.navbar .logo .subtitle-text {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+.navbar .links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+}
+
+.navbar .links .active {
+  font-weight: bold;
+  color: #000;
+}
+
+.section {
+  padding: 60px 40px;
+}
+
+.skills-section {
+  margin-bottom: 40px;
+}
+
+.skills-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+  margin: 0 0 10px 0;
+  color: #4f46e5;
+  font-size: 18px;
+}
+
+.skill-card p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid span {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta {
+  padding: 12px 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: #4338ca;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.description-text {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tagline {
+  font-family: 'Georgia', monospace;
+  font-style: italic;
+}
