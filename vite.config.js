@@ -3,11 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/My-Resume/', // Project repository served from subdirectory
-  server: {
-    middlewareMode: true,
-    mime: {
-      '.jsx': 'text/javascript'
-    }
-  }
+  base: '/My-Resume/' // Project repository served from subdirectory
 })
